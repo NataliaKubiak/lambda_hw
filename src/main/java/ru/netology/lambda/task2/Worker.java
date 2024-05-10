@@ -1,4 +1,4 @@
-package ru.netology.task2;
+package ru.netology.lambda.task2;
 
 public class Worker {
     private OnTaskDoneListener callback;

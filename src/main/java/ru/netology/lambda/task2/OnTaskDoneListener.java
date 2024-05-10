@@ -1,4 +1,4 @@
-package ru.netology.task2;
+package ru.netology.lambda.task2;
 
 @FunctionalInterface
 public interface OnTaskDoneListener {

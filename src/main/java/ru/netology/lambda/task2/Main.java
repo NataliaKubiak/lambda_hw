@@ -1,4 +1,4 @@
-package ru.netology.task2;
+package ru.netology.lambda.task2;
 
 public class Main {
     public static void main(String[] args) {

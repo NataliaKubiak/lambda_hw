@@ -1,4 +1,4 @@
-package ru.netology.task1;
+package ru.netology.lambda.task1;
 
 import java.util.function.*;
 
