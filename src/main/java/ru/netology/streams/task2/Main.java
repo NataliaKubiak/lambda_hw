@@ -22,15 +22,15 @@ public class Main {
                 .count();
 
         List<String> armyMen = persons.stream()
-                .filter(person -> person.getAge() >= 18 && person.getAge() <= 27)
+                .filter(person -> person.getAge() >= 18 && person.getAge() <= 27 && person.getSex() == Sex.MAN)
                 .map(Person::getFamily)
                 .toList();
         System.out.println("Army men count = " + armyMen.size());
 
         List<Person> workers = persons.stream()
                 .filter(person -> person.getEducation().equals(Education.HIGHER))
-                .filter(person -> (person.getSex().equals(Sex.WOMAN) && person.getAge() >= 18 && person.getAge() <= 60)
-                || (person.getSex().equals(Sex.MAN) && person.getAge() >= 18 && person.getAge() <= 65))
+                .filter(person -> (person.getSex().equals(Sex.WOMAN) && person.getAge() >= 18 && person.getAge() <= 60) ||
+                        (person.getSex().equals(Sex.MAN) && person.getAge() >= 18 && person.getAge() <= 65))
                 .sorted(Comparator.comparing(Person::getFamily))
                 .toList();
         System.out.println("Workers count = " + workers.size());
