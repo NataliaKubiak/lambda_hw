@@ -10,7 +10,7 @@ public class Calculator {
     BinaryOperator<Integer> multiply = (x, y) -> x * y;
     BinaryOperator<Integer> devide = (x, y) -> {
         if (y == 0) {
-            System.out.println("ERROR! Divsion by ZERO!");
+            System.out.println("ERROR! Division by ZERO!");
             return 0;
         }
         return x / y;
